@@ -1,5 +1,9 @@
 ## Antdroid/Minotauri's 2017-18 Pro Football Coach NFL Roster v1.11
 ## Updated Sept 09,2017
+##
+##Changelog
+##v1.0 Initial Release
+##v1.11 Fixed extra comma bug affecting iOS and players with initials for first name
 ######################################################################  RAVENS
 Baltimore Ravens,BAL
 S,Eric Weddle,32,2007,81,93,92,91,85,81,7,3
