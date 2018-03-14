@@ -1,5 +1,11 @@
 ## Antdroid/Minotauri NFL Roster for 2017-18 Season
-## version 1.60 (3-14-2018)
+## version 1.4 (09-13-2017)
+##Changelog
+##v1.0 Initial Release
+##v1.11 Fixed extra comma bug affecting iOS and players with initials for first name
+##v1.20: Randomized Potential based on Age
+##v1.30 Fixed Player Salaries; New Coverage Formula; Using PFC-Converter v1.2
+##v1.40 Normalizing Salaries to avoid salary cap issues
 ## http://www.AntDroid.net
 ######################################################################  RAVENS
 Baltimore Ravens,BAL
@@ -20,7 +26,7 @@ OL,Marshal Yanda,33,2007,65,99,90,90,97,78,5.9,2
 QB,Joe Flacco,32,2008,58,63,95,98,65,40,19.9,2
 WR,Mike Wallace,31,2009,72,75,83,73,88,72,5.6,1
 DL,Brandon Williams,28,2013,74,85,65,97,90,70,8.1,5
-S,Anthony Levine Sr,30,2010,75,62,70,79,75,59,1,3
+S,Anthony Levine Sr.,30,2010,75,62,70,79,75,59,1,3
 LB,Steven Johnson,29,2012,62,50,73,68,60,69,0.5,1
 OL,Ryan Jensen,26,2013,99,62,81,85,93,60,1.1,1
 S,Tony Jefferson,25,2013,67,87,71,79,71,77,6.9,4
@@ -59,7 +65,7 @@ S,Chuck Clark,22,2017,79,40,83,70,81,66,0.4,4
 CB,Jaylen Hill,23,2017,90,40,65,71,71,44,0.3,3
 DL,Patrick Ricard,23,2017,83,45,68,85,75,72,0.3,3
 END_PLAYERS
-######################################################################  BENGALS
+######################################################################  BENGALS0
 Cincinnati Bengals,CIN
 DL,Carlos Dunlap,28,2010,63,71,68,64,68,80,5.1,2
 DL,Geno Atkins,29,2010,71,90,73,85,81,75,8.5,2
@@ -403,7 +409,7 @@ OL,Ted Karras,24,2016,87,40,85,75,67,60,0.4,3
 CB,Jonathan Jones,24,2016,83,45,63,75,95,40,0.3,2
 OL,Joe Thuney,25,2016,92,70,85,75,61,63,0.6,3
 LB,Elandon Roberts,23,2016,71,60,75,75,75,71,0.4,3
-DL,Deatrich Wise Jr,23,2017,97,56,67,73,71,74,0.6,4
+DL,Deatrich Wise Jr.,23,2017,97,56,67,73,71,74,0.6,4
 OL,Cole Croston,24,2017,89,40,73,68,64,59,0.3,3
 WR,Jacob Hollister,24,2017,76,40,81,63,71,70,0.3,3
 END_PLAYERS
@@ -572,7 +578,7 @@ RB,Marlon Mack,21,2017,72,56,78,60,83,72,0.5,4
 S,Malik Hooker,21,2017,89,60,73,80,81,67,3.1,4
 OL,Kyle Kalis,24,2017,85,40,71,81,60,60,0.3,3
 LB,Tarell Basham,23,2017,79,45,83,63,64,68,0.7,4
-LB,Anthony Walker Jr,22,2017,87,40,90,70,68,66,0.5,4
+LB,Anthony Walker Jr.,22,2017,87,40,90,70,68,66,0.5,4
 CB,Quincy Wilson,21,2017,90,45,81,71,81,43,1.3,4
 OL,Luke Rhodes,25,2016,71,40,81,70,35,35,0.3,1
 RB,Darrell Daniels,23,2017,98,40,75,59,75,70,0.3,3
@@ -618,7 +624,7 @@ WR,Jaelen Strong,23,2015,70,40,70,75,87,68,0.6,2
 WR,Ben Koyack,24,2015,79,56,75,63,64,55,0.3,1
 WR,James O'Shaughnessy,25,2015,74,40,67,64,70,69,0.4,2
 OL,AJ Cann,26,2015,79,65,78,83,60,60,0.7,2
-DL,Dante Fowler Jr,23,2015,88,61,64,60,64,82,6.1,2
+DL,Dante Fowler Jr.,23,2015,88,61,64,60,64,82,6.1,2
 OL,Chris Reed,25,2015,96,45,68,73,62,61,0.3,1
 K,Josh Lambo,27,2015,88,40,67,90,71,40,0.4,1
 RB,Corey Grant,26,2015,74,54,62,60,97,70,0.3,1
@@ -705,7 +711,7 @@ CB,Aqib Talib,31,2008,61,90,81,89,81,47,6.6,3
 WR,Virgil Green,29,2011,83,60,67,63,75,71,2.1,1
 RB,Jamaal Charles,31,2008,70,71,68,71,85,79,1.6,1
 LB,Von Miller,28,2011,84,88,88,93,87,82,14.1,5
-CB,Chris Harris Jr,28,2011,62,90,87,91,87,45,6.6,3
+CB,Chris Harris Jr.,28,2011,62,90,87,91,87,45,6.6,3
 S,Darian Stewart,29,2010,79,68,83,79,73,63,4.8,4
 OL,Menelik Watson,29,2013,78,61,70,71,60,58,4.6,3
 WR,Emmanuel Sanders,30,2010,68,93,75,98,88,71,8.6,3
@@ -845,7 +851,7 @@ DL,Denico Autry,27,2014,67,60,70,60,64,71,1.1,1
 WR,Amari Cooper,23,2015,96,73,73,70,88,85,5.8,2
 WR,Clive Walford,26,2015,78,60,75,70,64,65,0.6,2
 OL,Jon Feliciano,25,2015,74,45,78,67,65,62,0.5,2
-DL,Mario Edwards Jr,23,2015,82,63,63,81,78,72,1.4,2
+DL,Mario Edwards Jr.,23,2015,82,63,63,81,78,72,1.4,2
 CB,Dexter McDonald,26,2015,81,40,70,74,87,37,0.4,2
 WR,Seth Roberts,26,2014,99,67,75,70,87,69,0.2,3
 QB,Connor Cook,24,2016,82,45,87,85,61,40,0.6,3
@@ -959,7 +965,7 @@ CB,Marcus Cooper,27,2013,80,61,78,79,85,46,3.6,3
 OL,Andrew Depaola,30,2012,81,45,70,61,60,58,0.4,1
 RB,Benny Cunningham,27,2013,89,60,78,67,78,71,0.6,1
 CB,Kyle Fuller,25,2014,69,61,85,85,88,60,2.4,1
-OL,Charles Leno Jr,26,2014,83,67,73,67,75,60,0.4,5
+OL,Charles Leno Jr.,26,2014,83,67,73,67,75,60,0.4,5
 K,Pat O'Donnell,26,2014,97,50,67,87,73,50,0.4,1
 LB,Christian Jones,26,2014,80,60,83,65,62,74,1.3,1
 WR,Dontrelle Inman,28,2014,86,63,75,81,81,75,1.7,1
@@ -1170,7 +1176,7 @@ WR,Dez Bryant,29,2010,84,85,83,88,83,86,11.3,3
 LB,Sean Lee,31,2010,82,98,73,95,78,77,5.8,3
 WR,Jason Witten,35,2003,74,98,93,90,62,63,4.8,5
 CB,Orlando Scandrick,30,2008,68,67,70,86,85,53,2.8,3
-OL,LP Ladouceur,36,2005,55,73,73,59,40,59,0.8,1
+OL,L. P. Ladouceur,36,2005,55,73,73,59,40,59,0.8,1
 LB,Justin Durant,32,2007,83,61,81,70,60,75,0.6,1
 K,Dan Bailey,29,2011,86,58,71,88,95,58,2.5,4
 RB,Darren McFadden,30,2008,44,59,62,65,83,70,0.7,1
@@ -1246,7 +1252,7 @@ RB,Rhett Ellison,29,2012,82,62,64,56,67,55,3.6,4
 LB,Deontae Skinner,27,2014,69,45,75,62,58,66,0.4,1
 CB,Ross Cockrell,26,2014,75,61,83,82,85,43,1.1,1
 OL,Weston Richburg,26,2014,72,83,85,83,63,60,1.1,1
-WR,Odell Beckham Jr,25,2014,93,93,85,83,93,79,3.3,2
+WR,Odell Beckham Jr.,25,2014,93,93,85,83,93,79,3.3,2
 DL,Jay Bromley,25,2014,72,56,73,73,67,70,0.6,1
 LB,Devon Kennard,26,2014,68,63,70,75,68,71,0.6,1
 S,Nat Berhe,26,2014,84,45,78,72,78,60,0.4,1
@@ -1352,7 +1358,7 @@ OL,Nick Sundberg,30,2009,71,45,64,56,56,45,0.8,4
 OL,Trent Williams,29,2010,82,95,83,95,85,81,9.6,4
 S,DeAngelo Hall,34,2004,46,70,71,82,81,62,3.6,1
 S,DJ Swearinger,26,2013,63,70,87,79,70,57,3.6,3
-WR,Terrelle Pryor Sr,28,2011,72,70,81,73,87,72,5.6,1
+WR,Terrelle Pryor Sr.,28,2011,72,70,81,73,87,72,5.6,1
 LB,Junior Galette,29,2010,61,67,65,63,63,70,0.5,1
 WR,Jordan Reed,27,2013,69,93,70,93,75,77,8.3,4
 DL,Ziggy Hood,30,2009,66,60,68,81,70,69,0.9,2
@@ -1431,7 +1437,7 @@ RB,Tevin Coleman,24,2015,92,70,73,81,93,86,0.6,2
 WR,Justin Hardy,26,2015,95,56,83,71,78,76,0.5,2
 OL,Ty Sambrailo,25,2015,88,59,73,64,71,59,0.8,2
 DL,Grady Jarrett,24,2015,74,71,65,83,81,72,0.4,2
-LB,Vic Beasley Jr,25,2015,97,70,71,63,70,85,3.6,2
+LB,Vic Beasley Jr.,25,2015,97,70,71,63,70,85,3.6,2
 CB,Jalen Collins,24,2015,87,61,68,82,85,46,1.2,2
 RB,Terron Ward,25,2015,70,54,78,70,78,79,0.4,1
 CB,CJ Goodwin,27,2014,72,45,71,76,87,37,0.3,1
@@ -1504,7 +1510,7 @@ CB,Kevon Seymour,24,2016,88,40,65,74,90,40,0.4,3
 CB,James Bradberry,24,2016,78,64,81,80,87,53,0.8,3
 RB,Christian McCaffrey,21,2017,95,54,78,68,87,77,4.4,4
 WR,Curtis Samuel,21,2017,80,56,75,65,95,69,1.5,4
-DL,Bryan Cox Jr,23,2017,94,40,68,67,68,74,0.3,3
+DL,Bryan Cox Jr.,23,2017,94,40,68,67,68,74,0.3,3
 OL,Taylor Moton,23,2017,95,45,93,78,71,65,0.8,4
 DL,Daeshon Hall,22,2017,83,40,81,61,63,76,0.6,4
 RB,Alex Armah,23,2017,95,40,90,62,68,67,0.4,4
@@ -1515,7 +1521,7 @@ RB,Mark Ingram,28,2011,57,81,83,81,78,82,3.1,2
 DL,Cameron Jordan,28,2011,65,85,88,87,88,82,8.9,4
 DL,Nick Fairley,29,2011,80,64,81,81,78,74,5.6,4
 S,Rafael Bush,30,2010,65,62,70,77,78,59,0.6,1
-WR,Ted Ginn Jr,32,2007,70,70,67,63,90,74,2.9,3
+WR,Ted Ginn Jr.,32,2007,70,70,67,63,90,74,2.9,3
 S,Kenny Vaccaro,26,2013,73,67,90,80,73,72,2.7,1
 WR,Michael Hoomanawanui,29,2010,79,63,68,64,62,46,1.2,2
 LB,Manti Te'o,26,2013,90,65,81,75,64,72,1.8,2
@@ -1527,7 +1533,7 @@ K,Thomas Morstead,31,2009,54,54,83,93,93,54,2.7,2
 OL,Terron Armstead,26,2013,72,83,70,81,64,83,9.5,5
 OL,Max Unger,31,2009,80,93,85,78,60,60,5.5,3
 DL,Alex Okafor,26,2013,87,63,88,61,61,70,1.9,1
-LB,Gerald Hodges Jr,26,2013,74,64,81,81,67,72,0.5,1
+LB,Gerald Hodges Jr.,26,2013,74,64,81,81,67,72,0.5,1
 LB,AJ Klein,26,2013,67,61,87,71,62,70,4.4,4
 LB,Craig Robertson,29,2011,67,63,75,75,64,70,1.3,2
 WR,Coby Fleener,29,2012,76,68,71,71,78,70,4.8,4
@@ -1567,7 +1573,7 @@ WR,Austin Carr,24,2017,96,40,78,67,75,76,0.3,3
 QB,Taysom Hill,27,2017,67,35,71,81,54,70,0.3,3
 RB,Trey Edmunds,23,2017,68,40,68,63,85,74,0.3,3
 END_PLAYERS
-#####################################################################  BUCCANEERS
+######################################################################  BUCCANEERS
 Tampa Bay Buccaneers,TB
 DL,Clinton McDonald,30,2009,50,60,71,81,75,71,1.9,1
 QB,Ryan Fitzpatrick,35,2005,70,56,75,78,61,43,1.9,1
@@ -1854,6 +1860,6 @@ WR,George Kittle,24,2017,66,60,73,68,78,66,0.5,4
 WR,Trent Taylor,23,2017,71,45,81,75,75,76,0.4,4
 WR,Kendrick Bourne,22,2017,74,40,67,62,78,71,0.3,3
 RB,Matt Breida,22,2017,99,52,73,70,90,75,0.3,3
-WR,Victor Bolden Jr,22,2017,86,40,78,63,85,67,0.3,3
+WR,Victor Bolden Jr.,22,2017,86,40,78,63,85,67,0.3,3
 OL,Darrell Williams,24,2017,97,40,75,63,61,60,0.3,1
 END_PLAYERS
